@@ -7,6 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(pi_rgb src/main.cpp)
 target_compile_options(pi_rgb PRIVATE -Wall -Wextra)
+target_include_directories(pi_rgb PRIVATE third_party/stb)
 
 option(ON_RPI "Build with RGB matrix support" OFF)
 
