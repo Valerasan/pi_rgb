@@ -10,8 +10,8 @@ int main(int argc, char** argv) {
 #ifdef ON_RPI
     RGBMatrix::Options options;
     options.hardware_mapping = "adafruit-hat";  
-    options.rows = 32;
-    options.cols = 32;
+    options.rows = 64;
+    options.cols = 64;
     options.chain_length = 1;
 
     rgb_matrix::RuntimeOptions runtime;
